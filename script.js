@@ -1,5 +1,26 @@
 function getRandomNumber(){
-    return Math.floor(Math.random()* 76) + 1;
+    let value = Math.floor(Math.random()* 76) + 1;
+    
+    highlightedNumber(value)
+}
+
+// const randomColor = function () {
+//     let g = Math.floor(Math.random()*(256));
+//     let r = Math.floor(Math.random()*(256));
+//     let b = Math.floor(Math.random()*(256));
+    
+//     return [r,g,b]
+// }
+
+function highlightedNumber(num) {
+    for (let i = 0; i <= 75; i++) {
+        let cellNumber = document.querySelectorAll(".num")[i]
+    
+        if (num === parseInt(cellNumber.innerText)) {
+            cellNumber.style.backgroundColor = "blue";
+        }
+    }
+    
 }
 
 function onLoadActions() {
