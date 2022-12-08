@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.num{
+    text-align: center;
+    line-height: 100px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.input-btn{
+    margin-bottom: 40px;
+}
